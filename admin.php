@@ -61,7 +61,7 @@ if(empty($_SESSION['UserName'])|| empty($_SESSION['UserPassword'])){
                         <input type="hidden" name="action" value="submit" />
 
                         <div class="text-center">
-                            <input type="button" onclick="ValidetForm()"  name="cartvisit"  value="Oluştur"  class="btn btn-info btn-block rounded-0 py-2">
+                            <input type="file" onclick="ValidetForm()"  name="cartvisit"  value="Oluştur"  class="btn btn-info btn-block rounded-0 py-2">
                         </div>
                     </div>
 
@@ -93,6 +93,7 @@ if(empty($_SESSION['UserName'])|| empty($_SESSION['UserPassword'])){
             var form=document.getElementById('cartvisit');
             document.getElementById('tur').value=tur;
             form.submit();
+
         }
     }
 </script>
